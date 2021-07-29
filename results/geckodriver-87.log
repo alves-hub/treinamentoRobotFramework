@@ -1,0 +1,15 @@
+1624245342513	geckodriver	INFO	Listening on 127.0.0.1:49256
+1624245345613	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\JEFFER~1.ALV\\AppData\\Local\\Temp\\rust_mozprofileJQk7Ek"
+1624245346049	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jefferson.alves\\AppData\\Local\\Temp\\rust_mozprofileJQk7Ek\\search.json.mozlz4", (void 0)))
+1624245348429	Marionette	INFO	Listening on port 62739
+1624245348823	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 108: Error: Got a request http://fonts.googleapis.com/css?family=Open+Sans:300,600&subset=latin,latin-ext without a browsingContextID set
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+[Parent 26420, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1624366201401	Marionette	INFO	Stopped listening on port 62739
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

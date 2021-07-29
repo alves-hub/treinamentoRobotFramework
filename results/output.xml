@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.6 on win32)" generated="20210711 16:49:59.697" rpa="false" schemaversion="2">
+<suite id="s1" name="SuiteExemploDeArguments" source="C:\SuiteSiteTestePractice\tests\SuiteExemploDeArguments.robot">
+<test id="s1-t1" name="Caso de teste exemplo 01">
+<kw name="Uma keyword qualquer 01">
+<msg timestamp="20210711 16:49:59.750" level="TRACE">Arguments: [  ]</msg>
+<kw name="Uma Subkeyword com argumentos">
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.email}</arg>
+<msg timestamp="20210711 16:49:59.752" level="TRACE">Arguments: [ ${NOME_USUARIO}='Jeffeson' | ${EMAIL_USUARIO}='jefferson.alv35@outlook' ]</msg>
+<kw name="Log" library="BuiltIn">
+<arg>Nome do usuário: ${NOME_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210711 16:49:59.753" level="TRACE">Arguments: [ 'Nome do usuário: Jeffeson' ]</msg>
+<msg timestamp="20210711 16:49:59.753" level="INFO">Nome do usuário: Jeffeson</msg>
+<msg timestamp="20210711 16:49:59.753" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210711 16:49:59.752" endtime="20210711 16:49:59.753"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Email do usuário: ${EMAIL_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210711 16:49:59.753" level="TRACE">Arguments: [ 'Email do usuário: jefferson.alv35@outlook' ]</msg>
+<msg timestamp="20210711 16:49:59.753" level="INFO">Email do usuário: jefferson.alv35@outlook</msg>
+<msg timestamp="20210711 16:49:59.753" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210711 16:49:59.753" endtime="20210711 16:49:59.753"/>
+</kw>
+<msg timestamp="20210711 16:49:59.754" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210711 16:49:59.750" endtime="20210711 16:49:59.754"/>
+</kw>
+<kw name="Uma subkeyword com retorno">
+<var>${MENSAGEM_ALERTA}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.idade}</arg>
+<arg>${PESSOA.sexo}</arg>
+<msg timestamp="20210711 16:49:59.756" level="TRACE">Arguments: [ ${NOME_USUARIO}='Jeffeson' | ${IDADE_USUARIO}='32' | ${SEXO_USUARIO}='masculino' ]</msg>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${MENSAGEM}</var>
+<arg>${IDADE_USUARIO} &gt;=50</arg>
+<arg>O Usuário ${NOME_USUARIO} do sexo ${SEXO_USUARIO} Não deve receber vacina do covid!</arg>
+<doc>Sets variable based on the given condition.</doc>
+<msg timestamp="20210711 16:49:59.756" level="TRACE">Arguments: [ '32 &gt;=50' | 'O Usuário ${NOME_USUARIO} do sexo ${SEXO_USUARIO} Não deve receber vacina do covid!' ]</msg>
+<msg timestamp="20210711 16:49:59.756" level="TRACE">Return: None</msg>
+<msg timestamp="20210711 16:49:59.757" level="INFO">${MENSAGEM} = None</msg>
+<status status="PASS" starttime="20210711 16:49:59.756" endtime="20210711 16:49:59.757"/>
+</kw>
+<msg timestamp="20210711 16:49:59.757" level="TRACE">Return: None</msg>
+<msg timestamp="20210711 16:49:59.757" level="INFO">${MENSAGEM_ALERTA} = None</msg>
+<status status="PASS" starttime="20210711 16:49:59.754" endtime="20210711 16:49:59.757"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${MENSAGEM_ALERTA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210711 16:49:59.757" level="TRACE">Arguments: [ None ]</msg>
+<msg timestamp="20210711 16:49:59.757" level="INFO">None</msg>
+<msg timestamp="20210711 16:49:59.757" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210711 16:49:59.757" endtime="20210711 16:49:59.758"/>
+</kw>
+<msg timestamp="20210711 16:49:59.758" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210711 16:49:59.749" endtime="20210711 16:49:59.758"/>
+</kw>
+<status status="PASS" starttime="20210711 16:49:59.749" endtime="20210711 16:49:59.758"/>
+</test>
+<doc>Exemplo de escopo de Variable: GLOBAIS. SUITE, TEST (Test case) e LOCAL (Keyword)</doc>
+<status status="PASS" starttime="20210711 16:49:59.700" endtime="20210711 16:49:59.760"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="SuiteExemploDeArguments">SuiteExemploDeArguments</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
